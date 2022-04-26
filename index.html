@@ -12,18 +12,32 @@
       <div id="left">left</div>
       <div id="center">
         <div id="main-input">
-          <div class="inputs">
+          <div>
             <input type="number" name="weight" id="weight" />
             <label for="weight"> Weight </label>
           </div>
-          <div class="inputs">
+          <div>
             <input type="number" name="reps" id="reps" />
             <label for="reps"> Reps </label>
           </div>
-          <div class="inputs">
+          <div>
             <input type="number" name="rpe" id="rpe" />
             <label for="rpe"> RPE </label>
           </div>
+        </div>
+        <div class="secondary-input">
+          <label for="rep-selector">Desired reps</label>
+          <select name="rep-selector" id="rep-selector" />
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+          <button id="submit">Submit</button>
         </div>
         <div id="main-output">weight reps</div>
       </div>

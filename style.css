@@ -33,7 +33,7 @@ main {
   display: flex;
 }
 
-.inputs {
+#main-input > div {
   display: flex;
   flex-direction: column;
   align-items: center;
