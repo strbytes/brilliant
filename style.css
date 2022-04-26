@@ -17,14 +17,6 @@ header {
 }
 
 main {
-  width: 100%;
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#center {
   background-color: #da614e;
   padding: 3em 5em;
   border-radius: 2em;
