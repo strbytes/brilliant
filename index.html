@@ -6,22 +6,25 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
+  <header><h1>Brilliant</h1></header>
   <body>
-    <header>header</header>
     <main>
-      <div id="left">left</div>
+      <div id="left"></div>
       <div id="center">
         <div id="main-input">
           <div>
-            <input type="number" name="weight" id="weight" />
+            <input type="number" name="weight" id="weight" 
+            min="0" max="1000" step="2.5"/>
             <label for="weight"> Weight </label>
           </div>
           <div>
-            <input type="number" name="reps" id="reps" />
+            <input type="number" name="reps" id="reps" 
+            min="1" max="12"/>
             <label for="reps"> Reps </label>
           </div>
           <div>
-            <input type="number" name="rpe" id="rpe" />
+            <input type="number" name="rpe" id="rpe" 
+            min="8" max="10" step="0.25"/>
             <label for="rpe"> RPE </label>
           </div>
         </div>
@@ -39,13 +42,13 @@
           </select>
           <button id="submit">Submit</button>
         </div>
+        <br>
         <div id="main-output">
-          <div id="e1rm"></div>
-          <div id="results"></div>
+          <div id="e1rm">Estimated 1RM:</div>
+          <div id="results">Suggested weight:</div>
         </div>
       </div>
-      <div id="right">right</div>
+      <div id="right"></div>
     </main>
-    <footer>footer</footer>
   </body>
 </html>

@@ -12,6 +12,10 @@ body {
   align-items: center;
 }
 
+header {
+  color: #ba412e;
+}
+
 main {
   width: 100%;
   flex: 1;
@@ -21,7 +25,9 @@ main {
 }
 
 #center {
-  /* flex: 1; */
+  background-color: #da614e;
+  padding: 3em 5em;
+  border-radius: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
