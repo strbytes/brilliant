@@ -14,25 +14,27 @@ body {
 
 header {
   color: #ba412e;
+  text-align: center;
 }
 
 main {
   background-color: #da614e;
   padding: 3em 5em;
   border-radius: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
 }
 
 #main-input {
   display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 #main-input > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+footer {
+  height: 30%;
 }
