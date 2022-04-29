@@ -3,9 +3,22 @@ html {
   font-size: 20px;
 }
 
+body {
+  background-color: #8bc1ca;
+}
+
 header {
-  color: #ba412e;
+  background-color: #aed4da;
+  max-width: 400px;
+  padding: 1em 0;
+  margin: 0 auto 0.7em auto;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #aa311e;
   text-align: center;
+  margin: 0;
 }
 
 main {
