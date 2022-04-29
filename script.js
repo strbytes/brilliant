@@ -41,8 +41,8 @@ function calculateBrilliant(_) {
 }
 
 function displayResults(e1rm, outputWeight) {
-  e1rmOutput.textContent = `Estimated 1RM: ${e1rm}`;
-  resultsOutput.textContent = `Suggested weight: ${outputWeight}`;
+  e1rmOutput.textContent = e1rm;
+  resultsOutput.textContent = outputWeight;
 }
 
 function round2point5(n) {

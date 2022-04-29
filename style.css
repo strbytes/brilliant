@@ -19,20 +19,40 @@ header {
 
 main {
   background-color: #da614e;
-  padding: 3em 5em;
-  border-radius: 2em;
-}
-
-#main-input {
+  max-width: 500px;
+  padding: 1em;
+  margin: 0 auto;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.5em;
 }
 
-#main-input > div {
+fieldset {
+  border: 0;
+  font-size: smaller;
+}
+
+input,
+select,
+button {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#submit,
+#output-section {
+  margin-top: 1em;
+}
+
+#output-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+#main-output {
+  margin-right: 2em;
+  font-weight: bold;
 }
 
 footer {

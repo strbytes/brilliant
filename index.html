@@ -10,26 +10,24 @@
   <body>
     <header><h1>Rambo's Brilliant Program Calculator</h1></header>
     <main>
-      <div id="main-input">
-        <div>
-          <input type="number" name="weight" id="weight" 
-          min="0" max="1000" step="2.5" value="225"/>
-          <label for="weight"> Weight </label>
-        </div>
-        <div>
-          <input type="number" name="reps" id="reps" 
-          min="1" max="12" value="3"/>
-          <label for="reps"> Reps </label>
-        </div>
-        <div>
-          <input type="number" name="rpe" id="rpe" 
-          min="8" max="10" step="0.25" value="9"/>
-          <label for="rpe"> RPE </label>
-        </div>
-      </div>
-      <div class="secondary-input">
-        <label for="rep-selector">Desired reps</label>
-        <select name="rep-selector" id="rep-selector" />
+      <fieldset>
+        <legend>Weight</legend>
+        <input type="number" name="weight" id="weight" 
+        min="0" max="1000" step="2.5" value="225" aria-label="weight"/>
+      </fieldset>
+      <fieldset>
+        <legend>Reps</legend>
+        <input type="number" name="reps" id="reps" 
+        min="1" max="12" value="3" aria-label="reps"/>
+      </fieldset>
+      <fieldset>
+        <legend>RPE</legend>
+        <input type="number" name="rpe" id="rpe" 
+        min="8" max="10" step="0.25" value="9" aria-label="rpe"/>
+      </fieldset>
+      <fieldset>
+        <legend>Desired reps</legend>
+        <select name="rep-selector" id="rep-selector" aria-label="desired reps"/>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -39,12 +37,13 @@
           <option value="7">7</option>
           <option value="8">8</option>
         </select>
-        <button id="submit">Submit</button>
-      </div>
-      <br>
-      <div id="main-output">
-        <div id="e1rm">Estimated 1RM:</div>
-        <div id="results">Suggested weight:</div>
+      </fieldset>
+      <fieldset><button id="submit">Submit</button></fieldset>
+      <div id="output-section">
+        <div id="output-label">Estimated 1RM: <br>
+        Suggested weight: </div>
+        <div id="main-output"><span id="e1rm">0</span><br>
+        <span id="results">0</span></div>
       </div>
     </main>
     <footer> </footer>
