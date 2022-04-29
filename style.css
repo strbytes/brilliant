@@ -27,11 +27,12 @@ fieldset {
 input,
 select,
 button {
+  font-size: large;
   box-sizing: border-box;
   width: 100%;
 }
 
-#submit,
+#calculate,
 #output-section {
   margin-top: 1em;
 }

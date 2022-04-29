@@ -2,11 +2,11 @@ const weightInput = document.querySelector("#weight");
 const repInput = document.querySelector("#reps");
 const rpeInput = document.querySelector("#rpe");
 const repSelector = document.querySelector("#rep-selector");
-const submitButton = document.querySelector("#submit");
+const calculate = document.querySelector("#calculate");
 const e1rmOutput = document.querySelector("#e1rm");
 const resultsOutput = document.querySelector("#results");
 
-submitButton.addEventListener("click", calculateBrilliant);
+calculate.addEventListener("click", calculateBrilliant);
 
 const brilliantPercents = {
   1: 0.93,
